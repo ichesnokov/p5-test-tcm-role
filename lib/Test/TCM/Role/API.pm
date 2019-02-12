@@ -207,6 +207,8 @@ sub _generate_request ($test, $method, $route, $params = undef) {
             croak "Don't know such request method as '$method'";
         }
     }
+
+    return $request;
 }
 
 sub _perform_request ($test, $request) {
